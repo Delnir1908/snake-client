@@ -14,6 +14,10 @@ const connect = function () {
     console.log(data);
   });
 
+  conn.on('connection', () => {
+    conn.write('Name:SNK');
+  });
+
   return conn;
 };
 
