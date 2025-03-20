@@ -14,7 +14,7 @@ const connect = function () {
     console.log(data);
   });
 
-  conn.on('connection', () => {
+  conn.on('connect', () => {
     conn.write('Name:SNK');
   });
 
