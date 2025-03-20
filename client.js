@@ -15,8 +15,9 @@ const connect = function () {
   });
 
   conn.on('connect', () => {
-    conn.write('Name:SNK');
-    //conn.write('Move: up');
+    conn.write('Name: SNK');
+    //conn.write('Move: up');   
+    conn.write('Say: GLHF');
   });
 
   return conn;

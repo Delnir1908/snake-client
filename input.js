@@ -20,18 +20,22 @@ const handleUserInput = function (key) {
 
   if (key === 'w') {
     connection.write('Move: up');
+    connection.write('Say: GG');
   }
 
   if (key === 'a') {
     connection.write('Move: left');
+    connection.write('Say: RUN');
   }
 
   if (key === 's') {
     connection.write('Move: down');
+    connection.write('Say: EAT');
   }
 
   if (key === 'd') {
     connection.write('Move: right');
+    connection.write('Say: MEAT');
   }
 
 };
