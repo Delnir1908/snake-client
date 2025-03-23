@@ -38,6 +38,11 @@ const handleUserInput = function (key) {
     connection.write('Say: MEAT');
   }
 
+  if (key === 'c') {
+    connection.write('Say: SNAKE ALERT');
+  }
+
+
 };
 
 module.exports = { setupInput };
